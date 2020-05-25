@@ -4,12 +4,12 @@
 
 List all persons
 ```
-curl -XGET http://localhost:8080/list
+curl -XGET https://cvapi.ree.io/list
 ```
 
 Get a single person
 ```
-curl -XGET http://localhost:8080/get/{id}
+curl -XGET https://cvapi.ree.io/get/{id}
 ```
 
 Update person
@@ -17,11 +17,11 @@ Update person
 curl \
     -H "Accept:application/json" \
     -H "Content-Type: application/json" \
-    -XPOST http://localhost:8080/update \
+    -XPOST https://cvapi.ree.io/update \
     -d '{"id":1,"name":"Olav","title":"SQL developer","age":40,"departments":["Engineering"]}'
 ```
 
 Delete person
 ```
-curl -XPOST http://localhost:8080/delete -d 'id=1'
+curl -XPOST https://cvapi.ree.io/delete -d 'id=1'
 ```
